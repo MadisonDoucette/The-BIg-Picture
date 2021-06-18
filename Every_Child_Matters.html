@@ -1,0 +1,119 @@
+<html lang="en-can">
+    <head>
+        <title>Every Child</title>
+        <meta name="description"
+        content="This ia a project page">
+        <meta name="author" content="Madison Doucette">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="project_pages.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Montserrat:wght@100;200;300&family=Roboto:wght@100;300&family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+        <script src="TBP4.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <h2 id="name">Madison Doucette</h2>
+        </nav>
+        <main>
+            <style>
+                .hero-image {
+                    background: url(gallery/every_child_matters.png) no-repeat center;
+                    left: 70%;
+                    transform: translate(20%);
+                    background-size: 50vw;
+                    height: 100vh;
+                    width: 100vw;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                }
+            </style>
+            <div class="hero-image" id="Home">
+                <div class="hero-text">
+                    <h1>Every Child Matters</h1>
+                    <h2>Art / Drawing Project</h2>
+                </div>
+            </div>
+            
+
+            <div class="slide" id="About_TBP">
+                <div class="a-left">
+                    <p>
+                        This poster was dine in order to bring awareness to Orange Shirt Day. The design was inspired by the traditional
+                        Haida Gwaii art style. This art has now been shown across the district, including in the December 2020 (volume 13)
+                        edition of the district magazine 'Canoe', and as a banner on the district website and facebook page in promotion of
+                        National Indigenous History Month and in recognition of the 215 children found on the lands of the Tk'emlups te
+                        Secwepemc, the band of the artist of this poster.<br>This is the original sketch that I created before digitizing
+                        the final design.
+                    </p>
+                </div>
+                <div class="b-right">
+                    <img src="gallery/ECM.jpeg">
+                </div>
+            </div>
+ 
+        </main>
+    </body>
+
+
+
+    <script>
+        let slides = document.getElementsByClassName("slide")
+        let navbar = document.getElementsByTagName("nav")[0]
+        let columns = document.getElementsByClassName("column")
+
+        /*for(let i = 0; i < cards.length; i++){
+            let img = document.createElement("img");
+                img.src = "gallery/"+cards[i].img;
+                img.setAttribute("onclick","activate(this)")
+            
+            let text = document.createElement("p")
+                text.className = "text";
+                text.innerHTML = cards[i].text
+
+            let info = document.createElement("p")
+                info.className = "info";
+                info.innerHTML = cards[i].info
+
+            let frame = document.createElement("div")
+                frame.className = "frame";
+                frame.appendChild(img)
+                frame.appendChild(text)
+                frame.appendChild(info)
+
+            columns[i%4].appendChild(frame)
+        }*/
+
+        setInterval(()=>{
+            if(window.pageYOffset-slides[0].offsetTop>=0)
+            {
+                navbar.classList.add("white")
+            } else {
+                navbar.classList.remove("white")
+            }
+
+        },100)
+
+        function st(i) {
+            window.scroll(0,window.innerHeight*(i+1))
+        }
+
+        function activate(element){
+            let active;
+            if(!element.parentElement.classList.contains('active')){
+                active = true
+            }
+
+            let c = document.getElementsByClassName('frame')
+
+            for(let i=0; i<c.length;i++){
+                c[i].classList.remove("active")
+            }
+
+            if(active){
+                element.parentElement.classList.add("active")
+            }
+        }
+    </script>
+</html>

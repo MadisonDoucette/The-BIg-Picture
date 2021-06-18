@@ -1,0 +1,122 @@
+<html lang="en-can">
+    <head>
+        <title>My Sketchbook</title>
+        <meta name="description"
+        content="This ia a project page">
+        <meta name="author" content="Madison Doucette">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="project_pages.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Montserrat:wght@100;200;300&family=Roboto:wght@100;300&family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+        <script src="TBP4.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <h2 id="name">Madison Doucette</h2>
+        </nav>
+        <main>
+            <style>
+                .hero-image {
+                    background: url(gallery/sketches/space.jpeg) no-repeat center;
+                    left: 70%;
+                    transform: translate(20%);
+                    background-size: 37vw;
+                    height: 100vh;
+                    width: 100vw;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                }
+            </style>
+            <div class="hero-image" id="Home">
+                <div class="hero-text">
+                    <h1>My Sketchbook</h1>
+                    <h2>Art / Drawing Project</h2>
+                </div>
+            </div>
+            
+                <div class="slide">
+                    <div class="full">
+                        <ul class="horizontal_scroll">
+                            <img src="gallery/sketches/super_heroes.jpeg">
+                            <img src="gallery/sketches/space.jpeg">
+                            <img src="gallery/sketches/girls.jpeg">
+                            <img src="gallery/sketches/house_mark1.jpeg">
+                            <img src="gallery/sketches/house_mark2.jpeg">
+                            <img src="gallery/sketches/house_mark3.jpeg">
+                            <img src="gallery/sketches/savaje.jpeg">
+                            <img src="gallery/sketches/doodles.jpeg">
+                            <img src="gallery/sketches/doodles 2.jpeg">
+                            <img src="gallery/sketches/doodles 1.jpeg">
+                            <img src="gallery/sketches/harpie.jpeg">
+                            <img src="gallery/sketches/Leo_Valdez.jpeg">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+ 
+        </main>
+    </body>
+
+
+
+    <script>
+        let slides = document.getElementsByClassName("slide")
+        let navbar = document.getElementsByTagName("nav")[0]
+        let columns = document.getElementsByClassName("column")
+
+        /*for(let i = 0; i < cards.length; i++){
+            let img = document.createElement("img");
+                img.src = "gallery/"+cards[i].img;
+                img.setAttribute("onclick","activate(this)")
+            
+            let text = document.createElement("p")
+                text.className = "text";
+                text.innerHTML = cards[i].text
+
+            let info = document.createElement("p")
+                info.className = "info";
+                info.innerHTML = cards[i].info
+
+            let frame = document.createElement("div")
+                frame.className = "frame";
+                frame.appendChild(img)
+                frame.appendChild(text)
+                frame.appendChild(info)
+
+            columns[i%4].appendChild(frame)
+        }*/
+
+        setInterval(()=>{
+            if(window.pageYOffset-slides[0].offsetTop>=0)
+            {
+                navbar.classList.add("white")
+            } else {
+                navbar.classList.remove("white")
+            }
+
+        },100)
+
+        function st(i) {
+            window.scroll(0,window.innerHeight*(i+1))
+        }
+
+        function activate(element){
+            let active;
+            if(!element.parentElement.classList.contains('active')){
+                active = true
+            }
+
+            let c = document.getElementsByClassName('frame')
+
+            for(let i=0; i<c.length;i++){
+                c[i].classList.remove("active")
+            }
+
+            if(active){
+                element.parentElement.classList.add("active")
+            }
+        }
+    </script>
+</html>

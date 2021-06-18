@@ -1,0 +1,541 @@
+<html lang="en-can">
+<head>
+    <title>A mess of HTML</title>
+    <meta name="description" 
+    content="this ia a mess of a bunch of simple HTML that I wanted to test out">
+    <meta name="author" content="Vera Marietta">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-color:powderblue;
+    
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+            sans-serif;
+
+            background-image: url('pano.jpeg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+    </style>
+</head>
+
+
+<body style="margin: 50px;">
+
+    <h1 style="background-color:hsl(187, 52%, 80%, .5);
+            border:4px solid powderblue;
+            color:white; font-size:5vw;">
+        Heading1</h1>
+    <br>
+    <br>
+
+    <a href="#C4" style="font-size:200%;">Jump to Chapter 4</a>
+    <h4 id="GB">Now You Are Back</h4>
+    <h2 style="font-family:'Times New Roman', Times, serif;">Times New Roman</h2>
+    <p style="color:orange;">this is an orange paragraph</p>
+    <p>this is a<br>break</p>
+    <h3 style="text-align:center;">this is a centered heading</h3>
+    <p style="text-align:center;">this is a centered paragraph</p>
+    <p style="font-size:500%;">here is a tiny paragraph</p>
+    <b>this is bold</b>
+    <p>this is<sub>superscript</sub></p>
+    <p>and this is<sup>subcript</sup></p>
+    <small>huge text</small>
+    <p>my fovorite colour is <del>green</del> <ins>blue</ins></p>
+    <p>Have you concidered that: <q>You can never be overdressed or overeducated</q></p>
+    <p>The <abbr title="Time And Relative Dimention In Space">TARDIS</abbr>
+        takes the form of a Mackenzie Trench-style police box</p>
+
+    <address>
+        Written by Vera Marietta.<br>
+        Visit us at:<br>
+        somewebsite.com<br>
+        Apollonius Crater<br>
+        Moon
+    </address>
+
+    <p>As Oscar Wilde once said:</p>
+    <blockquote>
+        Man is least himself when he talks in his own person.
+        Give him a mask, and he will tell the truth.
+    </blockquote>
+
+    <p><cite>The Importance of Being Earnest,</cite> by Oscar Wilde.
+        Writen 1894</p>
+
+    <bdo dir="rtl">this text will be written from right to left</bdo>
+
+    <p>Straight as a
+        <i style="color:red;">S</i>
+        <i style="color:orange;">L</i>
+        <i style="color:yellow;">I</i>
+        <i style="color:green;">N</i>
+        <i style="color:blue;">K</i>
+        <i style="color:indigo;">Y</i>
+    </p>
+
+    <p style="border:4px solid tomato;">
+        To live is the rarest thing in the world. Most people exist, that is all
+    </p>
+
+
+    <!--Links:-->
+    <a href="url">
+        link text basic layout</a><br>
+    <a href="https://www.somewebsite.com/" title="This is for a different site">
+        Absolute URL</a><br>
+    <a href="somewebsite.com" title="this is for links to other pages within the same website">
+        Relative URL</a><br>
+    <a href="somewebsite.com" target="_self">
+        This will open in the same tab</a><br>
+    <a href="somewebsite.com" target="_blank">
+        This will open in a different tab</a><br>
+    <a href="somewebsite.com"
+        style="color:cadetblue;text-decoration:none;"
+        title="And its blue(kinda)">
+        This is another link</a>
+        <br>
+
+<!--the following make the links into boxes-->
+<style>
+    a:link, a:visited {
+        background-color: hsl(4, 90%, 58%);
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        Text-decoration: none;
+        display: inline-block;
+    }
+    a:hover, a:active {
+        background-color: transparent;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    #table-1 {
+        border: 2px solid black;
+    }
+    #table-1 th, td {
+        padding: 15px;
+    }
+    #table-1 th {
+        background-color: tomato;
+    }
+    #table-1 td {
+        background-color: orange;
+    }
+    #table-2 {
+        border: 1px solid black;
+    }
+    #table-2 th {
+        background-color: cadetblue;
+    }
+    #schedule {
+        border: 2px solid black;
+    }
+
+</style>
+
+    <br>
+    <img src="Dr.Strange.jpeg" alt="The Scorcerer Supreme" class="center"
+        width="1440px;" hight="2300px;" title="Scorcerer Supreme">
+
+    <h2 id="C4" style="font-size:8vw;">Chapter 4</h2>
+    <p>There is nothing in Chapter 4.
+        I just wanted to make a bookmark.
+        So I did. And now you are here.
+        Click this to go back:
+    </p>
+    <a href="#GB" title="why are you still here">Go back</a>
+
+    <picture>
+        <source media="(min-width: 950px)" srcset="gallery/photos/powerhouse.jpeg" alt="powerhouse" class="center"
+        width="1440px;" hight="2300px;">
+        <source media="(min-width: 665px)" srcset="gallery/photos/arizona.jpeg" alt="Arizona" class="center"
+        width="1440px;" hight="2300px;">
+        <img src="thegreatwave.jpeg" alt="the great wave" class="center"
+        width="1440px;" hight="2300px;">
+    </picture>
+    <br>
+
+    <p><img src="gallery/photos/Graffiti.jpeg" alt="Graffiti"
+        style="float:right;width:302px;height:403px;">
+        The #2 Buntzen Lake Power House.<br><i>Photographed by Vera Marietta</i>
+    </p>
+
+    <img src="gallery/photos/petri.jpeg" alt="Petri Dishes" usemap="#petri" width=302px height=302px>
+
+    <map name="petri">
+        <area shape="circle" coords="220,203,90" alt="No.6" href="no6.com">
+        <area shape="circle" coords="76,66,87" alt="No.1" href="no1.com">
+    </map>
+
+    <table id="table-1" style="width:100%">
+        <tr>
+            <th>Country</th>
+            <th>Capital</th>
+            <th>Language</th>
+            <th>Currency</th>
+        </tr>
+        <tr>
+            <td>Greece</td>
+            <td>Athens</td>
+            <td>Greek</td>
+            <td>Euros</td>
+        </tr>
+        <tr>
+            <td>Brazil</td>
+            <td>Brasilia</td>
+            <td>Portugese</td>
+            <td>Brazilian Real</td>
+        </tr>
+        <tr>
+            <td>Norway</td>
+            <td>Oslo</td>
+            <td>Norwegian</td>
+            <td>Norwegian Krone</td>
+        </tr>
+    </table>
+    <br>
+
+        <a href="#C4" style="font-size:200%;">Jump to Chapter 4</a>
+
+    <table id="table-2" style="width:100%">
+        <tr>
+            <th>Book title</th>
+            <th>Is it a good book?</th>
+            <th>Would read Again?</th>
+        </tr>
+        <tr>
+            <td>Children of Blood and Bone</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Good Omens</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>City of Lost Souls</td>
+            <td>No</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>Wizard of Earthsea</td>
+            <td>Yes</td>
+            <td>Probably Not</td>
+        </tr>
+    </table>
+    <br>
+
+    <table id="Schedule" style="width:100%">
+        <tr>
+            <th>Time</th>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <tr>
+            <td>6:00-7:00</td>
+            <td></td>
+            <td class="fitness">Day 1: Mech+Meta</td>
+            <td class="fitness">Day 2: Mech</td>
+            <td class="fitness">Day 3: Meta</td>
+            <td class="fitness">Day 4: Recovery</td>
+            <td class="fitness">Day 5: Mech+Meta</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7:00-8:00</td>
+            <td></td>
+            <td class="ready"></td>
+            <td class="ready"></td>
+            <td class="ready"></td>
+            <td class="ready"></td>
+            <td class="ready"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>8:00-9:00</td>
+            <td></td>
+            <td class="ready"></td>
+            <td class="ready"></td>
+            <td class="ready"></td>
+            <td class="ready"></td>
+            <td class="ready"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>9:00-10:00</td>
+            <td></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10:00-11:00</td>
+            <td class="practice">10:45 - 11:45</td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11:00-12:00</td>
+            <td class="practice"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="fitness">Day 6: Recovery</td>
+        </tr>
+        <tr>
+            <td>12:00-1:00</td>
+            <td class="fitness">Rest Day</td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="hwother"></td>
+        </tr>
+        <tr>
+            <td>1:00-2:00</td>
+            <td class="hwother"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="hwother"></td>
+        </tr>
+        <tr>
+            <td>2:00-3:00</td>
+            <td class="hwother"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="school"></td>
+            <td class="hwother"></td>
+        </tr>
+        <tr>
+            <td>3:00-4:00</td>
+            <td class="hwother"></td>
+            <td class="bus"></td>
+            <td class="bus"></td>
+            <td class="bus"></td>
+            <td class="bus"></td>
+            <td class="bus"></td>
+            <td class="hwother"></td>
+        </tr>
+        <tr>
+            <td>4:00-5:00</td>
+            <td class="doe">Start Dinner</td>
+            <td class="bus"></td>
+            <td class="bus"></td>
+            <td class="bus"></td>
+            <td class="bus"></td>
+            <td class="bus"></td>
+            <td class="hwother"></td>
+        </tr>
+        <tr>
+            <td>5:00-6:00</td>
+            <td class="doe">Cooking</td>
+            <td class="doe">Cycling</td>
+            <td class="hwother"></td>
+            <td class="hwother"></td>
+            <td class="hwother"></td>
+            <td class="hwother"></td>
+            <td class="hwother"></td>
+        </tr>
+        <tr>
+            <td>6:00-7:00</td>
+            <td class="dinner"></td>
+            <td class="dinner"></td>
+            <td class="dinner"></td>
+            <td class="dinner"></td>
+            <td class="dinner"></td>
+            <td class="practice">Dryland, 6:30 - 7:45</td>
+            <td class="dinner"></td>
+        </tr>
+        <tr>
+            <td>Later™</td>
+            <td class="hwother"></td>
+            <td class="hwother"></td>
+            <td class="hwother"></td>
+            <td class="practice">7:45 - 8:45</td>
+            <td class="hwother"></td>
+            <td class="practice"></td>
+            <td class="hwother"></td>
+        </tr>
+    </table>
+
+    <style>
+        .school {
+            background-color: tomato;
+        }
+        .dinner {
+            background-color: pink;
+        }
+        .fitness {
+            background-color: orange;
+        }
+        .hwother {
+            background-color: lightskyblue;
+        }
+        .practice {
+            background-color: teal;
+        }
+        .bus {
+            background-color: cadetblue;
+        }
+        .doe {
+            background-color: aquamarine;
+        }
+        .ready {
+            background-color: steelblue;
+        }
+    </style>
+
+
+    <ul style="list-style-type:circle;">
+        <li>Tea (see below)</li>
+        <li>Books (see above)</li>
+        <li>Hammock</li>
+    </ul>
+
+    <ol>
+        <li>Strainer in mug</li>
+        <li>Tea and sugar in strainer</li>
+        <li>Boiling water in mug</li>
+        <li>Steep for 5 min</li>
+        <li>Stir in milk</li>
+    </ol>
+
+    <dl>
+        <dt>Tea</dt>
+        <dd>- Good with books</dd>
+        <dt>Books</dt>
+        <dd>- Good for avoiding social engagement</dd>
+        <dt>Hammock</dt>
+        <dd>- Also needed: a table for your tea</dd>
+    </dl>
+
+    <ul style="list-style-type:none;">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <div style="background-color:black; color:white; padding:20px;">
+        <h4>Always forgive your enemies.
+            Nothing annoys them so much.</h4>
+        <p>~Oscar Wilde
+        </p>
+    </div>
+    <br>
+
+    <div style="border: 1px solid black;">This is a block-level element.</div>
+    <p>This is a <span style="border: 1px solid black;">span</span> element
+    </p>
+    <p>
+        This is another <span style="color:tomato; font-weight:bold;">span</span> element
+    </p>
+    <hr>
+
+    <style>
+        .books {
+            background-color: black;
+            color: white;
+            margin: 20px;
+            padding: 15px;
+        }
+        .books:hover, .books:active {
+        background-color: transparent;
+        color: black
+    }
+    </style>
+
+    <div class="books">
+        <h2>Children of Blood and Bone</h2>
+        <p>Fantasy novel inspired by Nigerian mythology</p>
+    </div>
+
+    <div class="books">
+        <h2>Good Omens</h2>
+        <p>A tale about the bungling of Armageddon.
+            Features an Angel, a Demon,
+            an eleven-year-old Antichrist, and a witch.</p>
+    </div>
+
+    <div class="books">
+        <h2>City of Lost Souls</h2>
+        <p>The series started as a novel about deamon hunters.
+            This one, (the 5th in the series), is just a dumb romance book.
+            Would not reccomend.
+        </p>
+    </div>
+
+    <div class="books">
+        <h2>Wizard of Earthsea</h2>
+        <p>Set in the fictional archipelago of Earthsea.
+            Focuses on the yound mage, named Ged.
+        </p>
+    </div>
+
+
+    <h2>HTML Forms</h2>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>Submit your first and last name</p>
+
+    <h2>Radio Buttons</h2>
+    <form>
+        <input type="radio" id="yes" name="answer" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="answer" value="no">
+        <label for="no">No</label><br>
+        <input type="radio" id="maybe" name="answer" value="maybe">
+        <label for="maybe">Maybe</label>
+    </form>
+
+    <hr>
+    <h1>CSS = Styles<br>and Colors</h1>
+    <p>Manipulate<br>Text</p>
+    <p>Colors, Boxes</p>
+
+</body>
+
+<!--Anyone who lives within their means suffers from lack of imagination.
+
+There is only one thing in this world worse than being talked about,
+and that is not being talked about.-->
+
+</html>

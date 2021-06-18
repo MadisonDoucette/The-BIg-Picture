@@ -1,0 +1,315 @@
+body {
+    background-color: #1F2833;
+    margin: 0px;
+}
+
+/*This is for the nav bar and drop-down menu*/
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: .5s ease;
+    background-color: #0B0C10;
+    align-content: center;
+    height: 45px;
+}
+
+#name {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    
+}
+
+
+
+/*Standard stuff*/
+h1 {
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    font-size: 400%;
+    font-weight: 700;
+    font-family: 'Josefin Sans', serif;
+    font-size: 100px;
+}
+
+h2 {
+    color: #66FCF1;
+    font-family: 'Josefin Sans', serif;
+    text-transform: uppercase;
+    padding: 10%;
+    text-align: left;
+    font-size: 24px;
+}
+
+h3 {
+    color: #66FCF1;
+    font-family: 'Josefin Sans', serif;
+    text-transform: uppercase;
+    padding: 10%;
+    text-align: left;
+    font-size: 24px;
+}
+
+p {
+    letter-spacing: 2px;
+    text-indent: 20px;
+    line-height: 1.7;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding:  0 15%;
+    font-size: 16px;
+    margin: 0;
+}
+
+.a-right p {
+    color: white;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+    overflow-x: hidden;
+}
+
+/*hero image
+.hero-image {
+    background: url(gallery/bar_of_light.png) no-repeat center;
+    left: 70%;
+    transform: translate(20%);
+    background-size: 40vw;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    left: 0;
+}*/
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    transform: translate(-70%, -50%);
+    color: white;
+    background-attachment: fixed;
+}
+
+.hero-text h2 {
+    padding-top: 0;
+    padding-left: 0;
+}
+
+
+/*main stuff*/
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+}
+
+
+.slide {
+    position: relative;
+    top: 0;
+}
+
+
+
+/*slide sections*/
+
+.bar div,.slide div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.a-right {
+    width: 61.8vw;
+    background-color: #1F2833;
+    height: 100vh;
+}
+
+.b-left {
+    width: 38.2vw;
+    background-size: cover;
+    background-color: #1F2833;
+    height: 100vh;
+}
+
+.a-left {
+    width: 61.8vw;
+    background-color: #1F2833;
+    height: 100vh;
+    position: relative;
+}
+
+.b-right {
+    width: 38.2vw;
+    background-color: #1F2833;
+    height: 100vh;
+}
+
+.b-right img {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.b-right video {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    
+}
+
+.full {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1F2833;
+}
+
+.b-right h2{
+    color: white;
+}
+
+.about-me {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 2.5%;
+}
+
+
+
+
+/*gallery*/
+
+.projects {
+    padding: 0;
+    margin-bottom: 10vh;
+}
+
+.column {
+    max-width: calc((100% - 20px) / 4);
+    padding: 0;
+}
+
+.gallery {
+    width: 100vw;
+    background-color: #1F2833;
+}
+
+.frame {
+    margin: 20px 0 0 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.frame img {
+    transition: 0.8s ease;
+    width:100%;
+}
+
+.frame:hover img{
+    transform: scale(1.05);
+}
+
+.active img{
+    transform: scale(1)!important;
+}
+
+.frame p{
+    font-size: 1vw;
+    text-align: center;
+    padding: 1vw;
+    margin: 0;
+    color: inherit;
+    transition: 0.8s ease;
+    background: white;
+    text-indent: 0;
+}
+
+.frame .text{
+    text-transform: uppercase;
+    transform: translateY(100%);
+    position: absolute;
+    width: calc(100% - 1.9vw);
+}
+
+.info{
+    display: none;
+}
+
+.active .info{
+    display: block;
+    background:white;
+    margin:0;
+    padding: 5vw 2vw 2vw;
+}
+
+.frame:hover .text{
+    transform: translateY(-100%);
+}
+
+.active .text{
+    transform: translateY(0) !important;
+}
+
+.gallery h2{
+    padding: 2% 0;
+    margin: 20px 0 0;
+    letter-spacing: .5vw;
+}
+
+ul.horizontal_scroll {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    width: 100vw;
+    height: 80vh;
+    overflow-x: scroll;
+    background-color: #1F2833;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+ul.vertical_scroll {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #1F2833;
+    position: relative;
+
+}
+
+img {
+    display: inline;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*
+black: #0B0C10
+navy: #1F2833
+gray: #C5C6C7
+cyan: #66FCF1
+dark cyan: #45A29E
+*/

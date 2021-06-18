@@ -1,0 +1,123 @@
+<html lang="en-can">
+    <head>
+        <title>Explore</title>
+        <meta name="description"
+        content="This ia a project page">
+        <meta name="author" content="Madison Doucette">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="project_pages.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Montserrat:wght@100;200;300&family=Roboto:wght@100;300&family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+        <script src="TBP4.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <h2 id="name">Madison Doucette</h2>
+        </nav>
+        <main>
+            <style>
+                .hero-image {
+                    background: url(gallery/explore_new_worlds.png) no-repeat center;
+                    left: 70%;
+                    transform: translate(20%);
+                    background-size: 33vw;
+                    height: 100vh;
+                    width: 100vw;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                }
+            </style>
+            <div class="hero-image" id="Home">
+                <div class="hero-text">
+                    <h1>Explore New Worlds</h1>
+                    <h2>Art / Drawing Project</h2>
+                </div>
+            </div>
+            
+
+
+            <div class="slide" id="About_TBP">
+                <div class="a-left">
+                    <p>
+                        This was the "Personal" portion of the Golden Cirlce project. I chose reading as the intrest that I wanted to
+                        highlight as I thought it would be an interesting concept that could go many ways. This was drawn on Procreate
+                        for iPad with an Apple Pencil. To start, I began with a simple book outline then added planets of which I had
+                        made stamps for (to make the proscess easier). I then finalized the line art and began colouring. To create the
+                        "star dust" waves effect, I drew the waves then coloured over top with a noise brush and finaly cut away
+                        extra dust with the selection tool. To create the font, I used another image as inspiration, then invented the
+                        letters that the reference didn't have.
+                    </p>
+                </div>
+                <div class="b-right">
+                    <video controls>
+                        <source src="gallery/timelapse2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+ 
+        </main>
+    </body>
+
+
+
+    <script>
+        let slides = document.getElementsByClassName("slide")
+        let navbar = document.getElementsByTagName("nav")[0]
+        let columns = document.getElementsByClassName("column")
+
+        /*for(let i = 0; i < cards.length; i++){
+            let img = document.createElement("img");
+                img.src = "gallery/"+cards[i].img;
+                img.setAttribute("onclick","activate(this)")
+            
+            let text = document.createElement("p")
+                text.className = "text";
+                text.innerHTML = cards[i].text
+
+            let info = document.createElement("p")
+                info.className = "info";
+                info.innerHTML = cards[i].info
+
+            let frame = document.createElement("div")
+                frame.className = "frame";
+                frame.appendChild(img)
+                frame.appendChild(text)
+                frame.appendChild(info)
+
+            columns[i%4].appendChild(frame)
+        }*/
+
+        setInterval(()=>{
+            if(window.pageYOffset-slides[0].offsetTop>=0)
+            {
+                navbar.classList.add("white")
+            } else {
+                navbar.classList.remove("white")
+            }
+
+        },100)
+
+        function st(i) {
+            window.scroll(0,window.innerHeight*(i+1))
+        }
+
+        function activate(element){
+            let active;
+            if(!element.parentElement.classList.contains('active')){
+                active = true
+            }
+
+            let c = document.getElementsByClassName('frame')
+
+            for(let i=0; i<c.length;i++){
+                c[i].classList.remove("active")
+            }
+
+            if(active){
+                element.parentElement.classList.add("active")
+            }
+        }
+    </script>
+</html>
